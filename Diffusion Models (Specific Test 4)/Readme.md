@@ -4,10 +4,16 @@
 |--------------------------------------|---------------|------------------------|--------------|------|-------------------------|
 | Diffusion Models for Gravitational Lensing Simulation | gsoc_proposal | DEEPLENSE | 175hr | 2023 | Alabama, Brown, BITS Pilani Hyderabad, Paris, RWTH |
 
+## Link to Colab Notebook:
+https://colab.research.google.com/drive/1Kpd543qfX0U0D3-bLM8f9Ql4_A6_vbgl?usp=sharing
+
+## Link to Model weights:
+https://drive.google.com/drive/folders/1az2mEtImKHMqg93aiI_RoKZF2mbabmsb?usp=drive_link
+
 ## Approaching the Task: 
 
 1) Having an academic background in Mechanical Engineering and thermodynamics helped me better understand the working of the probabilistic denosing of the images.
-2) My first step was to take a look over all the refernces provided in the problem statement and gather the relevant data.
+2) My first step was to take a look over all the references provided in the problem statement and gather the relevant data.
 3) Secondly, I went onto study and analyse the model architecture from the research paper.
 4) Lastly, I started implementing the research paper in my notebook taking reference from the implementations of diffusion models on CIFAR10 dataset.
 
@@ -38,7 +44,7 @@ U-Net, originally developed for semantic segmentation, is an architecture that i
 1) The network accepts two inputs: Image and time step
 2) Self-attention between the convolution blocks once we reach a specific resolution (16x16 in the paper)
 3) Group Normalization instead of weight normalization
-![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/DDPM.png)
+![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/DDPM`.png)
 
 ## Working Methodology:
 
