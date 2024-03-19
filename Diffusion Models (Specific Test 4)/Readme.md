@@ -6,13 +6,14 @@
 
 ## Approaching the Task: 
 
-1) My first step was to take a look over all the refernces provided in the problem statement and gather the relevant data.
-2) Secondly, I went onto study and analyse the model architecture from the research paper.
-3) Lastly, I started implementing the research paper in my notebook taking reference from the implementations of diffusion models on CIFAR10 dataset.
+1) Having an academic background in Mechanical Engineering and thermodynamics helped me better understand the working of the probabilistic denosing of the images.
+2) My first step was to take a look over all the refernces provided in the problem statement and gather the relevant data.
+3) Secondly, I went onto study and analyse the model architecture from the research paper.
+4) Lastly, I started implementing the research paper in my notebook taking reference from the implementations of diffusion models on CIFAR10 dataset.
 
 ## Introduction to DDPM(Denoising Diffusion Probabilistic Model):
 
-![Diffusion models](https://arxiv.org/pdf/2006.11239.pdf) are inspired by non-equilibrium thermodynamics, and they learn to generate by denoising. Learning by denoising consists of two processes,
+[Diffusion models](https://arxiv.org/pdf/2006.11239.pdf) are inspired by non-equilibrium thermodynamics, and they learn to generate by denoising. Learning by denoising consists of two processes,
 each of which is a Markov Chain. These are:
 
 1. The forward process: In the forward process, we slowly add random noise to the data
@@ -37,6 +38,7 @@ U-Net, originally developed for semantic segmentation, is an architecture that i
 1) The network accepts two inputs: Image and time step
 2) Self-attention between the convolution blocks once we reach a specific resolution (16x16 in the paper)
 3) Group Normalization instead of weight normalization
+![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/DDPM.png)
 
 ## Working Methodology:
 
@@ -51,7 +53,9 @@ Implementing a DDPM model is simple. We define a model that takes two inputs: Im
 ## Evaluation Metrics: 
 
 1) By visual inspection, we can qualitatively see the images closesly resemble the original images.
+Original Images
 ![Original Images](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/GeneratedImages.png)
+Generated Images
 ![Generated Images](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/GeneratedImages.png)
 
 2) On a quantitative aspect, the loss vs epoch graph plot showcases how the MSE(Mean Squared Error) is decreasing with increasing number of epochs.
