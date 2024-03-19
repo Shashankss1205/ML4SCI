@@ -1,8 +1,8 @@
 ## Common Test I. Multi-Class Classification
 
-| Title                                | Layout        | Project                | Project Size | Year |
-|--------------------------------------|---------------|------------------------|--------------|------|
-| Multi-Class Classification | gsoc_proposal | DEEPLENSE | 175hr | 2024 |
+| Title                                | Layout        | Project    | Year |
+|--------------------------------------|---------------|------------|------|
+| Multi-Class Classification           | gsoc_proposal | DEEPLENSE  | 2024 |
 
 ## Link to Colab Notebook:
 https://colab.research.google.com/drive/1MrrI02G3gaOXldxojqdOSMHk6EHyW3X1?usp=sharing
@@ -14,16 +14,16 @@ https://drive.google.com/drive/folders/1r5QUIbUqeRvldYiJdN6RChNDHWXBb5y6?usp=sha
 
 1) Having a background in image classification and generation, It was easy to work with the dataset provided.
 2) My first step was to take a look over the dataset provided in the problem statement and gather the relevant information regarding the three classes, strong lensing images with no substructure, subhalo substructure, and vortex substructure.
-3) Secondly, I went onto study and analyse the model architecture and chose ResNet18 because of its vast usecase and high accuracy.
+3) Secondly, I went onto study and analyse the model architecture and chose ResNet18 because of its vast use-case, light architecture and high accuracy.
 4) Lastly, I started implementing the code in my notebook taking reference from the implementations of a reference notebook created by ML4SCI in a hackathon, 3 years ago.
 
 ## Introduction to Strong Lensing Challenge - Multi-Class Classification:
 
 Gravitational lensing has been a cornerstone in many cosmology experiments and studies since it was discussed in Einstein’s calculations back in 1936 and discovered in 1979, and one area of particular interest is the study of dark matter via substructure in strong lensing images. In this challenge, I focus on exploring the potential of supervised models in identifying dark matter based on simulated strong lensing images with different substructure.
 
-This is an example notebook for the Multi-Class Classification Challenge. In this notebook, I demonstrate @ models:
+This is an example notebook for the Multi-Class Classification Challenge. In this notebook, I demonstrated 2 models:
 
-1) A Base Resnet18 model implemented using the PyTorch library to solve the task.
+1) A Resnet18 model implemented using the PyTorch library to solve the task of multi-class classification of strong lensing images.
 2) A simple CNN model implemented using the PyTorch library to solve the task of multi-class classification of strong lensing images.
 
 ## Model Architecture:
@@ -47,13 +47,11 @@ This is an example notebook for the Multi-Class Classification Challenge. In thi
 
 ## Working Methodology:
 
-Implementing a DDPM model is simple. We define a model that takes two inputs: Images and the randomly sampled time steps. At each training step, we perform the following operations to train our model:
+Implementing a ResNet18 model is simple:
 
-1) Sample random noise to be added to the inputs.
-2) Apply the forward process to diffuse the inputs with the sampled noise.
-3) Your model takes these noisy samples as inputs and outputs the noise prediction for each time step.
-4) Given true noise and predicted noise, we calculate the loss values
-5) We then calculate the gradients and update the model weights.
+1) Implemented the ResNet18 architecture for multiclass image classification, with modifications in the final fully connected layer to accommodate the number of classes specific to the problem (e.g., classes representing different types of dark matter substructure).
+2) Chose an appropriate loss function for multiclass classification tasks, such as cross-entropy loss, which penalizes the model based on the difference between predicted and actual class probabilities.
+3) Utilized optimization algorithms such as Adam, stochastic gradient descent (SGD), or RMSProp to train the model.
 
 ## Evaluation Metrics: 
 

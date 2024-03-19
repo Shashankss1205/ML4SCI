@@ -48,13 +48,13 @@ U-Net, originally developed for semantic segmentation, is an architecture that i
 
 ## Working Methodology:
 
-Implementing a DDPM model is simple. We define a model that takes two inputs: Images and the randomly sampled time steps. At each training step, we perform the following operations to train our model:
+Implementing a DDPM model is simple. I define a model that takes two inputs: Images and the randomly sampled time steps. At each training step, we perform the following operations to train our model:
 
 1) Sample random noise to be added to the inputs.
 2) Apply the forward process to diffuse the inputs with the sampled noise.
-3) Your model takes these noisy samples as inputs and outputs the noise prediction for each time step.
-4) Given true noise and predicted noise, we calculate the loss values
-5) We then calculate the gradients and update the model weights.
+3) The model takes these noisy samples as inputs and outputs the noise prediction for each time step.
+4) Given true noise and predicted noise, the loss values are calculated
+5) The gradients are calculated and the model weights updated.
 
 ## Evaluation Metrics: 
 
