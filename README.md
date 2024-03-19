@@ -11,8 +11,8 @@ This is my personal repository to submit my solutions to the test problems provi
 | DDPM (Specific Test 4)               | gsoc_proposal | DEEPLENSE  | Implementing denoising diffusion probabilistic model. [This will be my GSOC'24 proposal project] |
 
 # Diffusion Model
-![At initial time](https://github.com/Shashankss1205/ML4SCI/blob/main/Images%20Folder/Diffusion_start`.png)
-![At final time](https://github.com/Shashankss1205/ML4SCI/blob/main/Images%20Folder/Diffusion_final`.png)
+![At initial time](https://github.com/Shashankss1205/ML4SCI/blob/main/Image%20Folder/Diffusion_start.png)
+![At final time](https://github.com/Shashankss1205/ML4SCI/blob/main/Image%20Folder/Diffusion_final.jpg)
 
 # Multi-Class Classification: Common Test 1
 | Model Architecture | Number of epochs | Learning rate | Training Loss | Training Accuracy | Micro-average ROC-AUC | Macro-average ROC-AUC |
