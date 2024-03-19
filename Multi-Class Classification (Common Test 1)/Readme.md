@@ -43,7 +43,7 @@ This is an example notebook for the Multi-Class Classification Challenge. In thi
 ### ResNet18 Model Instance
 1) Created using the ResNet class with ResidualBlock as the basic block and a configuration of [2, 2, 2] for the number of blocks in each layer.
 2) This follows the ResNet18 architecture, which consists of 2 blocks in each of the three layers.
-![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/ResNet18`.png)
+![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Multi-Class%20Classification%20(Common%20Test%201)/Images%20Folder/ResNet18.png)
 
 ## Working Methodology:
 
@@ -58,10 +58,10 @@ Implementing a DDPM model is simple. We define a model that takes two inputs: Im
 ## Evaluation Metrics: 
 
 1) In the ResNet18 Model, the value of RUC-AOC curve is very high, because of the complex model architecture.
-![ROC-AUC curve for ResNet18](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/ROC_ResNet18.png)
+![ROC-AUC curve for ResNet18](https://github.com/Shashankss1205/ML4SCI/blob/main/Multi-Class%20Classification%20(Common%20Test%201)/Images%20Folder/ROC_ResNet18.png)
 
 2) The AUC score is very low here, since I have trained a basic CNN model.
-![ROC-AUC curve for CNN](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/ROC_CNN.png)
+![ROC-AUC curve for CNN](https://github.com/Shashankss1205/ML4SCI/blob/main/Multi-Class%20Classification%20(Common%20Test%201)/Images%20Folder/ROC_CNN.png)
 
 ## Possible Improvisations:
 
