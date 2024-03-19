@@ -44,7 +44,7 @@ U-Net, originally developed for semantic segmentation, is an architecture that i
 1) The network accepts two inputs: Image and time step
 2) Self-attention between the convolution blocks once we reach a specific resolution (16x16 in the paper)
 3) Group Normalization instead of weight normalization
-![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/DDPM`.png)
+![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/DDPM.png)
 
 ## Working Methodology:
 
