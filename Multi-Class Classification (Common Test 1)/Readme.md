@@ -5,7 +5,7 @@
 | Multi-Class Classification           | gsoc_proposal | DEEPLENSE  | 2024 |
 
 ## Link to Colab Notebook:
-https://colab.research.google.com/drive/1MrrI02G3gaOXldxojqdOSMHk6EHyW3X1?usp=sharing
+https://colab.research.google.com/drive/1Kpd543qfX0U0D3-bLM8f9Ql4_A6_vbgl?usp=sharing
 
 ## Link to Model weights:
 https://drive.google.com/drive/folders/1r5QUIbUqeRvldYiJdN6RChNDHWXBb5y6?usp=sharing

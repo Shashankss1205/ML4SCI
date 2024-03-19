@@ -8,5 +8,4 @@ This is my personal repository to submit my solutions to the test problems provi
 | Title                                | Layout        | Project    | Description                                                |
 |--------------------------------------|---------------|------------|------------------------------------------------------------|
 | Multi-Class Classification (Common Test 1) | gsoc_proposal | DEEPLENSE  | Implementing multi-class classification.  
-|--------------------------------------|---------------|------------|------------------------------------------------------------|               |
 | DDPM (Specific Test 4)               | gsoc_proposal | DEEPLENSE  | Implementing denoising diffusion probabilistic model. [This will be my GSOC'24 proposal project] |

@@ -5,7 +5,7 @@
 | Diffusion Models for Gravitational Lensing Simulation | gsoc_proposal | DEEPLENSE | 175hr | 2023 | Alabama, Brown, BITS Pilani Hyderabad, Paris, RWTH |
 
 ## Link to Colab Notebook:
-https://colab.research.google.com/drive/1Kpd543qfX0U0D3-bLM8f9Ql4_A6_vbgl?usp=sharing
+https://colab.research.google.com/drive/1MrrI02G3gaOXldxojqdOSMHk6EHyW3X1?usp=sharing
 
 ## Link to Model weights:
 https://drive.google.com/drive/folders/1az2mEtImKHMqg93aiI_RoKZF2mbabmsb?usp=drive_link
