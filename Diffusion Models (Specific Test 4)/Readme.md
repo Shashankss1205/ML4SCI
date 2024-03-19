@@ -59,7 +59,6 @@ Implementing a DDPM model is simple. I define a model that takes two inputs: Ima
 ## Evaluation Metrics: 
 
 1) By visual inspection, we can qualitatively see the images closesly resemble the original images.
-Original Images
 ![Generated Images](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/GeneratedImages.png)
 
 2) On a quantitative aspect, the loss vs epoch graph plot showcases how the MSE(Mean Squared Error) is decreasing with increasing number of epochs.
