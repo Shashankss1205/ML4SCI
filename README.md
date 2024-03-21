@@ -9,7 +9,7 @@ This is my personal repository to submit my solutions to the test problems provi
 |--------------------------------------|---------------|------------|------------------------------------------------------------|
 | Multi-Class Classification (Common Test 1) | gsoc_proposal | DEEPLENSE  | Implementing multi-class classification.  
 | DDPM (Specific Test 4)               | gsoc_proposal | DEEPLENSE  | Implementing denoising diffusion probabilistic model. [This will be my GSOC'24 proposal project] |
-| SSL on Real Dataset     | gsoc_proposal  | DEEPLENSE  | 175hr        | 2024 | Implementing SSL Contrastive learning   |
+| SSL on Real Dataset     | gsoc_proposal  | DEEPLENSE  | Implementing SSL Contrastive learning   |
 
 # Diffusion Model
 Image generated at first epoch
@@ -23,7 +23,7 @@ Image generated at 20th epoch
 | ResNet18            | 50               | 1e-4          | 0.00114       | 1                 | 1.0                   | 1.0                   |
 | CNN                 | 50               | 1e-4          | 1.03          | 0.461             | 0.6626                | 0.64877               |
 
-# ROC-AUC Curve for ResNet18:
+## ROC-AUC Curve for ResNet18:
 ![ROC-AUC curve for ResNet18](https://github.com/Shashankss1205/ML4SCI/blob/main/Multi-Class%20Classification%20(Common%20Test%201)/Images%20Folder/ROC_ResNet18.png)
 
 # SSL on Real Dataset: Specific Test 6
