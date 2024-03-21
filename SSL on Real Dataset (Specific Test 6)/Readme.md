@@ -21,10 +21,11 @@ https://drive.google.com/drive/folders/1I9PJfZoezdR4UkpBnyK3oL86DVqT1nXg?usp=sha
 
 ## Approaching the Task: 
 
-1) Having an academic background in Mechanical Engineering and thermodynamics helped me better understand the working of the probabilistic denosing of the images.
-2) My first step was to take a look over all the references provided in the problem statement and gather the relevant data.
-3) Secondly, I went onto study and analyse the model architecture from the research paper.
-4) Lastly, I started implementing the research paper in my notebook taking reference from the implementations of diffusion models on CIFAR10 dataset.
+1) Having a background in image classification and generation, It was easy to work with the dataset provided.
+2) My first step was to take a look over the dataset provided in the problem statement and gather the relevant information regarding gravitational lensing and how does it affect an image.
+3) Secondly, I went onto study and analyse the model architecture and chose contrastive methods of SSL because of its vast use-case, light architecture and high accuracy.
+4) Lastly, I started implementing the code in my notebook taking reference from the implementations of a reference notebook created by ML4SCI in GSOC previous year.
+5) While writing my code, I suffered from NaN loss after training my model various times and bringing relevant changes, finally leading me to realize that the input data itself has some NaN values to take care of.
 
 ## Introduction to SSL(Self-Supervised Learning):
 
@@ -37,11 +38,11 @@ Though the discipline of SSL is diverse in both methodology and use cases, model
 
 ## Model Architecture:
 
-U-Net, originally developed for semantic segmentation, is an architecture that is widely used for implementing diffusion models but with some slight modifications:
+Self-supervised learning methods encompass three key components:
 
-1) The network accepts two inputs: Image and time step
-2) Self-attention between the convolution blocks once we reach a specific resolution (16x16 in the paper)
-3) Group Normalization instead of weight normalization
+1) The encoder or feature extractor, responsible for automatically extracting essential image features into vectors
+2) Data augmentation, which enhances encoder training by providing diverse perspectives of images through strategies like Resized Crop and Color Jitter
+3) Contrastive learning methods, employing positive and negative pairs to train encoders using contrastive loss
 ![Model Architecture](https://github.com/Shashankss1205/ML4SCI/blob/main/Image%20Folder/encoder_decoder.png)
 
 
