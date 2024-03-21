@@ -9,6 +9,7 @@ This is my personal repository to submit my solutions to the test problems provi
 |--------------------------------------|---------------|------------|------------------------------------------------------------|
 | Multi-Class Classification (Common Test 1) | gsoc_proposal | DEEPLENSE  | Implementing multi-class classification.  
 | DDPM (Specific Test 4)               | gsoc_proposal | DEEPLENSE  | Implementing denoising diffusion probabilistic model. [This will be my GSOC'24 proposal project] |
+| SSL on Real Dataset     | gsoc_proposal  | DEEPLENSE  | 175hr        | 2024 | Implementing SSL Contrastive learning   |
 
 # Diffusion Model
 Image generated at first epoch
@@ -24,3 +25,17 @@ Image generated at 20th epoch
 
 # ROC-AUC Curve for ResNet18:
 ![ROC-AUC curve for ResNet18](https://github.com/Shashankss1205/ML4SCI/blob/main/Multi-Class%20Classification%20(Common%20Test%201)/Images%20Folder/ROC_ResNet18.png)
+
+# SSL on Real Dataset: Specific Test 6
+| Model Architecture | Number of epochs | Learning rate | Training Loss | Training Accuracy | Lensed AUC | Non Lensed ROC-AUC |
+|---------------------|------------------|---------------|---------------|-------------------|-----------------------|-----------------------|
+| Supervised Learning            | 20               | 1e-4          | 0.7248       | 0.7083                 | 0.9                   | 0.9                   |
+| SSL with Rotation Augmentation            | 20               | 1e-4          | 0.7336       | 0.6369                 | 0.82                   | 0.73                   |
+| SSL with Gaussian Augmentation            | 20               | 1e-4          | 0.6209          | 0.7619             | 0.91                | 0.91              |
+
+# AUC for SSL:
+### Rotational Augmentation
+![ROC-AUC curve for Rotational](https://github.com/Shashankss1205/ML4SCI/blob/main/SSL%20on%20Real%20Dataset%20(Specific%20Test%206)/Rotational/ROC-AUC.png)
+
+### Gaussian Augmentation
+![ROC-AUC curve for Gaussian Blur](https://github.com/Shashankss1205/ML4SCI/blob/main/SSL%20on%20Real%20Dataset%20(Specific%20Test%206)/Gaussian/ROC-AUC.png)

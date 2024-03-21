@@ -6,7 +6,7 @@
 
 # Rotational Augmentation
 ## Link to Colab Notebook:
-https://colab.research.google.com/drive/1MrrI02G3gaOXldxojqdOSMHk6EHyW3X1?usp=sharing
+https://colab.research.google.com/drive/1mioRlVC_bTNEvhTLoNOFqjMNKmBBF1uJ?usp=sharing
 
 ## Link to Model weights:
 https://drive.google.com/drive/folders/1a3z4W_eEtv1m4GJhGF_n8IRE6OybO8el?usp=sharing
@@ -57,10 +57,10 @@ Implementing a SSL model is simple. I define a model that takes Images as inputs
 
 ## Evaluation Metrics: 
 
-1) In the Rotational fine-tuned model, the value of RUC-AOC curve is high compared to supervised model, because of the pretext training.
-![ROC-AUC curve for Rotational](https://github.com/Shashankss1205/ML4SCI/blob/main/SSL%20on%20Real%20Dataset%20(Specific%20Test%206)/Gaussian/ROC-AUC.png)
+1) In the Rotational fine-tuned model, the value of RUC-AOC curve is high, because of the pretext training.
+![ROC-AUC curve for Rotational](https://github.com/Shashankss1205/ML4SCI/blob/main/SSL%20on%20Real%20Dataset%20(Specific%20Test%206)/Rotational/ROC-AUC.png)
 
-2) In the Gaussian Blur fine-tuned model, the value of RUC-AOC curve is high compared to supervised model, because of the pretext training.
+2) In the Gaussian Blur fine-tuned model, the value of RUC-AOC curve is high, because of the pretext training.
 ![ROC-AUC curve for Gaussian Blur](https://github.com/Shashankss1205/ML4SCI/blob/main/SSL%20on%20Real%20Dataset%20(Specific%20Test%206)/Gaussian/ROC-AUC.png)
 
 ## Possible Improvisations:
