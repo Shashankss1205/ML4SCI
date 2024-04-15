@@ -12,7 +12,7 @@ https://drive.google.com/file/d/1jj1dtD16EYjuW2r3WlSPl6ocEOLuA6nv/view?usp=shari
 
 ## Approaching the Task: 
 
-1) Having an academic background in Mechanical Engineering and thermodynamics helped me better understand the working of the probabilistic denosing of the images.
+1) Having an academic background in Mechanical Engineering and thermodynamics helped me better understand the working of the implicit denosing of the images.
 2) My first step was to take a look over all the references provided in the problem statement and gather the relevant data.
 3) Secondly, I went onto study and analyse the model architecture from the research paper.
 4) Lastly, I started implementing the research paper in my notebook taking reference from the implementations of diffusion models on MNIST & Fashion dataset.
@@ -34,8 +34,7 @@ every time step. We start with the pure noise distribution (the last step of the
 forward process) and try to denoise the samples in the backward direction
 `(tn, tn-1, ..., t1)`.
 
-The paper describes two algorithms, one for training the model, and the other for sampling from the trained model. Training is performed by optimizing the usual variational bound on negative log-likelihood. The objective function is further simplified, and the network is treated as a noise prediction network. Once optimized, we can sample from the network to generate new images from noise samples. Here is an overview of both algorithms as presented in the paper:
-![Algorithms Used](https://github.com/Shashankss1205/ML4SCI/blob/main/Diffusion%20Models%20(Specific%20Test%204)/Images%20Folder/Algorithms.png)
+The paper describes two algorithms, one for training the model, and the other for sampling from the trained model. Training is performed by optimizing the usual variational bound on negative log-likelihood. The objective function is further simplified, and the network is treated as a noise prediction network. Once optimized, we can sample from the network to generate new images from noise samples. 
 
 ## Model Architecture:
 
@@ -52,17 +51,17 @@ Implementing a DDIM model is simple. I define a model that takes two inputs: Ima
 
 1) Sample random noise to be added to the inputs.
 2) Apply the forward process to diffuse the inputs with the sampled noise.
-3) The model takes these noisy samples as inputs and outputs the noise prediction for each time step.
+3) The model takes these noisy samples as inputs and outputs the noise prediction for each time step implicitally.
 4) Given true noise and predicted noise, the loss values are calculated
 5) The gradients are calculated and the model weights updated.
 
 ## Evaluation Metrics: 
 
 1) By visual inspection, we can qualitatively see the images closesly resemble the original images.
-![Generated Images](https://github.com/Shashankss1205/ML4SCI/blob/main/Post%20Deadline%20Work%20/DDIM%20Model%20/trained.png)
+![Generated Images](https://github.com/Shashankss1205/ML4SCI/blob/main/Post%20Deadline%20Work/DDIM%20Model/trained.png)
 
 2) On a quantitative aspect, the KID loss variation with each epoch showcases how it is decreasing with increasing number of epochs.
-![MSE losses vs epochs](https://github.com/Shashankss1205/ML4SCI/blob/main/Post%20Deadline%20Work%20/DDIM%20Model%20/epochsError.png)
+![MSE losses vs epochs](https://github.com/Shashankss1205/ML4SCI/blob/main/Post%20Deadline%20Work/DDIM%20Model/epochsError.png)
 
 ## Possible Improvisations:
 

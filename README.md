@@ -39,3 +39,11 @@ Image generated at 20th epoch
 
 ### Gaussian Augmentation
 ![ROC-AUC curve for Gaussian Blur](https://github.com/Shashankss1205/ML4SCI/blob/main/SSL%20on%20Real%20Dataset%20(Specific%20Test%206)/Gaussian/ROC-AUC.png)
+
+
+# Work done Post GSOC Application Deadline:
+
+## Diffusion Denoising Implicit Model (DDIM)
+
+Implemented a DDIM as a part of the Specific Test 4. 2 images generated from that model are shown below:
+![Generated Images](https://github.com/Shashankss1205/ML4SCI/blob/main/Post%20Deadline%20Work/DDIM%20Model/trained.png)
